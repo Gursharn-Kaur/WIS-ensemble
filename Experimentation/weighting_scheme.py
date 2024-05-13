@@ -23,8 +23,9 @@ def model_weights(data, t_p = 4):
     avg_wis_value = []
 
     for idx, row in data.iterrows():
-        e_date = row['forecast_date']-pd.Timedelta(days=7)
-        s_date = row['forecast_date']-pd.Timedelta(days=7+t_p*7)
+        target = int(row['target'].split('-')[0])
+        e_date = row['forecast_date']-pd.Timedelta(days=target*7)
+        s_date = row['forecast_date']-pd.Timedelta(days=target*7+t_p*7)
         selected_rows = data[(data['forecast_date']>s_date)&(data['forecast_date']<=e_date)&(data['method']==row['method'])&(data['target']==row['target'])&(data['FIPS']==row['FIPS'])]
 
         assert selected_rows['forecast_date'].unique()!=len(selected_rows) or selected_rows['target_end_date'].unique()!=len(selected_rows), 'Duplicate rows are found: {}'.format(selected_rows)

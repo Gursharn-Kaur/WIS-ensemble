@@ -1,7 +1,9 @@
 import pandas as pd
 import math
 import numpy as np
-from Experimentation.monte_carlo import *
+import sys
+sys.path.append('../IAAI-Codes/Experimentation/')
+from monte_carlo import *
 '''
 
     Returns ensemble result using Vincent aggregation.

@@ -17,3 +17,4 @@ def get_alpha(fname='alpha.txt'):
     alphas = [float(a) for a in read_alpha]
     return alphas
 
+
