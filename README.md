@@ -6,7 +6,7 @@ Score-Based Ensemble for Epidemic Disease Prediction** (submitted in CIKM-2024).
 
 We organize this repository as follows:
 
-**data:** this folder contains all necessary data for the experimentation.
+**data:** this folder contains all necessary data for the experimentation. The folder also contains phase information inside phase-info.csv file.
 
 **Experimentation:** This folder contains seven Python files containing necessary codes.
 
