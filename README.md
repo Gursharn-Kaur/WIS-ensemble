@@ -1,6 +1,7 @@
 # WIS-ensemble
 
-This is the repository for **Enhanced Probabilistic Forecast through Weighted Interval Score Based Ensemble** (submitted in IAAI-2024).
+This is the repository for **Enhanced Probabilistic Forecast through Weighted Interval
+Score-Based Ensemble for Epidemic Disease Prediction** (submitted in CIKM-2024).
 
 
 We organize this repository as follows:
